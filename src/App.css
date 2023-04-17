@@ -2,37 +2,92 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: whitesmoke;
+  font-family: Roboto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Appbar-container{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: darkorchid;
+  width: 100%;
+  height: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.phone-name {
+  padding: 16px;
+  font-size: 28px;
+  margin-bottom: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.phone-company {
+  font-size: 22px;
+  color: grey;
+  margin-top: 0px;
+}
+.phone-price{
+  font-size: 20px;
+  color: rgb(5, 4, 4);
+  margin-top: 0px;
+
+}
+
+.phone-picture {
+  height:250px ;
+  width: 100%;
+  object-fit:contain;
+}
+
+.phone-container {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  height: 500px;
+  box-shadow: rgb(0 0 0 / 24%) 1px 2px 13px;
+}
+
+.phone-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 24px;
+}
+
+.phone-add-cart {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+
+.cart-item-container {
+  display: flex;
+  background-color: white;
+  text-align: left;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.cart-item-picture {
+  height: 240px;
+  width: 350px;
+  object-fit: contain;
+}
+
+.cart-item-company {
+  color: grey;
+  margin-top: 0px;
+}
+
+.cart-item-quantity > span {
+  color: grey;
+  font-size: 14px;
+}
+
+.cart-checkout {
+  display: flex;
+  justify-content: center;
 }
